@@ -1,13 +1,12 @@
 import {
   FaBirthdayCake,
   FaCog, FaGithub,
-
-
   FaLinkedin, FaMale,
-  FaMapMarkerAlt, FaMobile, FaRegHeart
+  FaMapMarkerAlt, FaMobile,
+  FaRegHeart
 } from 'react-icons/fa';
 import {
-  MdDashboard, MdEmail, MdSchool,
+  MdBook, MdDashboard, MdEmail, MdSchool,
   MdStars, MdWork
 } from 'react-icons/md';
 import {
@@ -114,7 +113,7 @@ const Home: React.FC = () => {
          </p>
           <p>
             No começo de 2020 adiante comecei a atuar como freelancer junto com outros desenvolvedores, onde
-            conversamos constantemente remotamente e aplicando algumas práticas de <strong>Scrum</strong> para consolidar ideias de projetos web,
+            conversamos constantemente e remotamente, aplicando algumas práticas de <strong>Scrum</strong> para consolidar ideias de projetos web,
             é onde estou aperfeiçando as minhas <em>soft skills</em>.
             Portanto estou acostumado em trabalhar remotamente.
           </p>
@@ -168,24 +167,23 @@ const Home: React.FC = () => {
               </div>
             </li>
             <li>
-              <div><MdSchool /></div>
+              <div><MdBook /></div>
               <div>
-                <strong>Faculdade de Tecnologia de Botucatu | <span>2015 - 2019</span></strong>
-                <h3>Superior em Análise e Desenvolvimento de Sistemas </h3>
+                <strong>Origamid | <span>Abril 2020 - sem limite</span></strong>
+                <h3>Web Design Completo</h3>
                 <span>
-                  Curso focado em desenvolvimento, gerenciamento e análise de sistemas de computador,
-                  englobando tanto sistemas web como sistemas desktop.
+                  Curso para aprendizado e aplicação de HTML, CSS, Javascript para construção do projeto BikCraft.
                 </span>
               </div>
             </li>
             <li>
-              <div><MdSchool /></div>
+              <div><MdBook /></div>
               <div>
-                <strong>Faculdade de Tecnologia de Botucatu | <span>2015 - 2019</span></strong>
-                <h3>Superior em Análise e Desenvolvimento de Sistemas </h3>
+                <strong>RocketSeat | <span>Outubro 2020 - Outubro 2021</span></strong>
+                <h3>Node.js, React.js e React Native </h3>
                 <span>
-                  Curso focado em desenvolvimento, gerenciamento e análise de sistemas de computador,
-                  englobando tanto sistemas web como sistemas desktop.
+                  Curso para aprendizado do uso de linguagens como JavaScript e Typescript com utilização de
+                  Node.js, React.js e React Native junto com aplicação de Docker e testes unitários.
                 </span>
               </div>
             </li>
