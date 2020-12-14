@@ -239,13 +239,13 @@ const Home: React.FC = () => {
               href={'https://github.com/magno193'}
               target="_blank"
               rel="noreferrer">
-              <FaGithub />
+              <FaGithub color="#fff" />
             </a>
             <a
               href={'https://www.linkedin.com/in/alexandre-ferreira-451b0b191/'}
               target="_blank"
               rel="noreferrer">
-              <FaLinkedin />
+              <FaLinkedin color="#fff" />
             </a>
           </Links>
         </nav>
