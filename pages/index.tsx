@@ -1,9 +1,15 @@
 import {
-  FaBirthdayCake, FaGithub,
+  FaBirthdayCake,
+  FaCog, FaGithub,
+
+
   FaLinkedin, FaMale,
-  FaMapMarkerAlt, FaMobile
+  FaMapMarkerAlt, FaMobile, FaRegHeart
 } from 'react-icons/fa';
-import { MdEmail, MdWork } from 'react-icons/md';
+import {
+  MdDashboard, MdEmail, MdSchool,
+  MdStars, MdWork
+} from 'react-icons/md';
 import {
   BGImage, Container, Content,
   HeaderTitle, Links
@@ -34,7 +40,12 @@ const Home: React.FC = () => {
           </Links>
         </nav>
       </header>
-      <BGImage />
+      <BGImage>
+        <div>
+          <h1>Seja bem-vindo(a) ao meu website</h1>
+          <span>Veja as informações abaixo para me conhecer mais <FaRegHeart /></span>
+        </div>
+      </BGImage>
       <Content>
         <aside>
           <div>
@@ -142,8 +153,105 @@ const Home: React.FC = () => {
               </div>
             </li>
           </ul>
+
+          <h2>Cursos</h2>
+          <ul>
+            <li>
+              <div><MdSchool /></div>
+              <div>
+                <strong>Faculdade de Tecnologia de Botucatu | <span>2015 - 2019</span></strong>
+                <h3>Superior em Análise e Desenvolvimento de Sistemas </h3>
+                <span>
+                  Curso focado em desenvolvimento, gerenciamento e análise de sistemas de computador,
+                  englobando tanto sistemas web como sistemas desktop.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div><MdSchool /></div>
+              <div>
+                <strong>Faculdade de Tecnologia de Botucatu | <span>2015 - 2019</span></strong>
+                <h3>Superior em Análise e Desenvolvimento de Sistemas </h3>
+                <span>
+                  Curso focado em desenvolvimento, gerenciamento e análise de sistemas de computador,
+                  englobando tanto sistemas web como sistemas desktop.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div><MdSchool /></div>
+              <div>
+                <strong>Faculdade de Tecnologia de Botucatu | <span>2015 - 2019</span></strong>
+                <h3>Superior em Análise e Desenvolvimento de Sistemas </h3>
+                <span>
+                  Curso focado em desenvolvimento, gerenciamento e análise de sistemas de computador,
+                  englobando tanto sistemas web como sistemas desktop.
+                </span>
+              </div>
+            </li>
+          </ul>
+
+          <h2>Conhecimentos</h2>
+          <ul>
+            <li>
+              <div><MdStars /></div>
+              <div>
+                <strong className="tech">Técnicas: <span>Git, Comunicação, Trabalho Remoto, Kanban, SOLID, Scrum</span></strong>
+                <h3>Conhecimentos Gerais</h3>
+                <span>
+                  Acostumado em trabalhar de forma remota com equipe, realizando reuniões frequentes e também uso de método Kanban
+                  para gerenciar fluxo de trabalho.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <MdDashboard />
+              </div>
+              <div>
+                <strong className="tech">Ferramentas: <span>HTML, CSS, Javascript/Typescript, Figma, React.js, Next.js</span></strong>
+                <h3>Front-End</h3>
+                <span>
+                  Utilização de componentes de React com Javascript ou Typescript para estilização de páginas
+                   junto à biblioteca <em>styled-components</em>. Conheço também a ferramenta Figma para prototipação e criação de UI.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <FaCog />
+              </div>
+              <div>
+                <strong className="tech">Ferramentas: <span>ASP.NET Core, Node.js, Banco de Dados, Javascript/Typescript</span></strong>
+                <h3>Back-End</h3>
+                <span>
+                  Conhecimento em aplicação de método MVC quanto método API RESTful, banco de dados relacionais e não relacionais,
+                  uso de ferramentas como ASP.NET Core e Node.js com utilização de bibliotecas pelo npm ou yarn dependendo da necessidade de cada projeto.
+                </span>
+              </div>
+            </li>
+          </ul>
         </article>
       </Content>
+      <footer>
+        <nav>
+          <span>Website desenvolvido por Alexandre Ferreira com tecnologia Next.js</span>
+          <Links>
+            <a
+              href={'https://github.com/magno193'}
+              target="_blank"
+              rel="noreferrer">
+              <FaGithub />
+            </a>
+            <a
+              href={'https://www.linkedin.com/in/alexandre-ferreira-451b0b191/'}
+              target="_blank"
+              rel="noreferrer">
+              <FaLinkedin />
+            </a>
+          </Links>
+        </nav>
+      </footer>
     </Container>
   );
 }

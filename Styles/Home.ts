@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.main`
   margin: 0 auto;
 
-  & > header {
+  & > header, > footer {
     display: flex;
     align-items: center;
     height: 50px;
@@ -11,16 +11,21 @@ export const Container = styled.main`
     box-shadow: 1px 1px #666;
   }
 
-  & > header > nav {
+  & > header > nav, footer > nav {
     flex: 1;
     max-width: 1140px;
     padding: 0 2rem;
     height: 40px;
     margin: 0 auto;
+    color: #fff;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  footer nav > span {
+    font-size: .9rem;
   }
 `;
 
@@ -74,6 +79,43 @@ export const BGImage = styled.div`
 	height: 280px;
 	background-size: cover;
 	margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+
+  div {
+    height: 60%;
+    margin: auto 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff ;
+    text-shadow:
+      -1.5px -1.5px 0 #0c0c0c,
+      1.5px -1.5px 0 #0c0c0c,
+      -1.5px 1.5px 0 #0c0c0c,
+      1.5px 1.5px 0 #0c0c0c;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      margin-left: 5px;
+      font-weight: 700;
+      font-style: oblique;
+
+      svg {
+        margin-left: 10px;
+        height: 20px;
+        width: 20px;
+        border: 1px;
+      }
+    }
+  }
 `;
 
 export const Content = styled.section`
@@ -137,6 +179,9 @@ export const Content = styled.section`
     h2 {
       margin-top: 60px;
       margin-bottom: 15px;
+      background: #003049;
+      color: #fff;
+      padding-left: 5px;
       border-bottom: 1px solid #ccc;
       font-family: 'Roboto Slab', serif;
     }
@@ -156,17 +201,32 @@ export const Content = styled.section`
         margin-bottom: 20px;
 
         div > strong {
-          font-size: 1.3rem;
+          font-size: 1rem;
           color: #222;
+
+          &.tech {
+            font-weight: lighter;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: #222;
+            border-bottom: solid 1px #ccc;
+
+            span {
+            color: #003049;
+            font-weight: bold;
+          }
+          }
+
         }
 
         div > strong span {
           font-weight: lighter;
           color: #666;
           font-size: 0.85rem;
+
         }
 
-        div > svg{
+        div > svg {
           height: 40px;
           width: 40px;
           margin: 10px;
