@@ -125,14 +125,36 @@ export const Content = styled.section`
   margin: 0 auto;
   padding: 0 32px;
 
-  aside {
-    min-width: 280px;
-    margin-right: 40px;
+  @media(max-width: 400px) {
+    padding: 0 18px;
   }
 
   article, aside > div {
     background-color: #fff;
     padding: 20px;
+  }
+
+  aside {
+    margin-right: 40px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: .5s;
+      &:hover {
+        color: #003049;
+        font-weight: bold;
+      }
+    }
+
+    @media(max-width: 800px) {
+      margin-right: 0;
+      width:100%;
+    }
+
+    @media(max-width: 400px) {
+      padding: 20px 10px 20px 10px;
+    }
   }
 
   aside > div {
@@ -170,7 +192,11 @@ export const Content = styled.section`
       }
     }
   }
-
+  @media(max-width: 450px) {
+    article {
+      padding: 20px 10px 20px 10px;
+    }
+  }
   article {
     flex: 4;
     line-height: 1.5;
@@ -194,11 +220,29 @@ export const Content = styled.section`
     ul {
       list-style: none;
       margin-top: 30px;
-
+      @media(max-width:800px) {
+        li {
+          flex-wrap: wrap;
+        }
+      }
       li {
         display: flex;
         padding: 10px;
         margin-bottom: 20px;
+
+         @media(max-width:800px) {
+           div:first-child {
+             margin-bottom: 10px;
+             svg {
+               height: 60px;
+               width: 60px;
+               border: solid 2.5px;
+               border-radius: 4px;
+               padding: 0;
+               margin: 0;
+             }
+           }
+         }
 
         div > strong {
           font-size: 1rem;
@@ -214,7 +258,7 @@ export const Content = styled.section`
             span {
             color: #003049;
             font-weight: bold;
-          }
+            }
           }
 
         }
@@ -223,7 +267,6 @@ export const Content = styled.section`
           font-weight: lighter;
           color: #666;
           font-size: 0.85rem;
-
         }
 
         div > svg {

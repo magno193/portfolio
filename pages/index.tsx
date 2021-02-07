@@ -79,11 +79,23 @@ const Home: React.FC = () => {
               </li>
               <li>
                 <FaGithub />
-                <span>github.com/magno193</span>
+                <a
+                  href='https://github.com/magno193'
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>github.com/magno193</span>
+                </a>
               </li>
               <li>
                 <FaLinkedin />
-                <span>linkedin.com/in/magno193</span>
+                <a
+                  href='https://www.linkedin.com/in/magno193/'
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>linkedin.com/in/magno193</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -236,13 +248,13 @@ const Home: React.FC = () => {
           <span>Website desenvolvido por Alexandre Ferreira com tecnologia Next.js</span>
           <Links>
             <a
-              href={'https://github.com/magno193'}
+              href='https://github.com/magno193'
               target="_blank"
               rel="noreferrer">
               <FaGithub color="#fff" />
             </a>
             <a
-              href={'https://www.linkedin.com/in/alexandre-ferreira-451b0b191/'}
+              href='https://www.linkedin.com/in/magno193/'
               target="_blank"
               rel="noreferrer">
               <FaLinkedin color="#fff" />
